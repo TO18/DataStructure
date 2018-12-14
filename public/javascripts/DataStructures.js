@@ -57,12 +57,24 @@
 
 // graph is a non-linear data structure
 // graph is used to model and represent variety of systems
-// in linked-list and tree all nodes/ vertices are reachable from root
-// for n nodes, we have n-1 edges in tree - always directed from parent to child
+// in linked-list and tree all nodes/ vertices are reachable from root - for n nodes, we have n-1 edges
+// regular linked-list is directed as you can't return to parent node
 // for non-linear data structures the array of values we're given is the set of keys (unique identifiers) as order doesn't matter
-// once a system is modeled, a lot of problems can easily be solved
+// graph = {V, E} where V = {key (can also be object), ...} and E = {{origin, destination}, ...}
+// for graph - elements of Vertices/ Nodes set need to have key property, and elements of Edges set needs to have 'origin' and 'destination' properties
+
+// if you want to save on space for strings or large int keys, create hash function to convert to small int and another for vice versa
+// hash table to implement graph model's edges properties
+// adjacency matrix and list with graph
+// once a problem/ event is modeled, a lot of inherent problems can easily be solved
+// arithmetic based solution for structures eg array, is dangerous
 
 // hash table is a bounded finite data structure, non-linear, and implements an associative array ADT, a structure that can map keys to values
 // search (O(1)), insert (O(1)), delete (O(1)), space (O(n)) - can be (O(n^2)) when new memory chunk with insert
 // hash table uses a hash function to compute index where key is stored in associative array - index is calculated % size of array (m)
 // sort or operate based on element frequency - tree-map
+
+// resources
+// www.mycodeschools.com
+// https://www.youtube.com/watch?v=92S4zgXN17o&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P
+// https://www.youtube.com/watch?v=wWgIAphfn2U&list=PLqM7alHXFySGwXaessYMemAnITqlZdZVE
