@@ -105,3 +105,11 @@ console.log(result)
 //     output.push(input.slice((start + (inputSegment * index)), ))
 // }
 // const slicedInput = input.slice()
+
+
+const m = new Map()
+m.set(19, 'yay')
+m.set(3, 'no')
+for (const [key, value] of m) {
+    console.log(key, value)
+}
